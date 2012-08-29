@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		883CF86115EE76B2003A2FE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86015EE76B2003A2FE1 /* UIKit.framework */; };
+		883CF86315EE76B2003A2FE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86215EE76B2003A2FE1 /* Foundation.framework */; };
+		883CF86515EE76B2003A2FE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86415EE76B2003A2FE1 /* CoreGraphics.framework */; };
+		883CF86B15EE76B2003A2FE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 883CF86915EE76B2003A2FE1 /* InfoPlist.strings */; };
+		883CF86D15EE76B2003A2FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF86C15EE76B2003A2FE1 /* main.m */; };
+		883CF87115EE76B2003A2FE1 /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */; };
+		883CF87415EE76B2003A2FE1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883CF87215EE76B2003A2FE1 /* MainStoryboard.storyboard */; };
+		883CF87715EE76B2003A2FE1 /* SWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF87615EE76B2003A2FE1 /* SWMasterViewController.m */; };
+		883CF87A15EE76B2003A2FE1 /* SWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF87915EE76B2003A2FE1 /* SWDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		883CF85C15EE76B2003A2FE1 /* BoardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883CF86015EE76B2003A2FE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		883CF86215EE76B2003A2FE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		883CF86415EE76B2003A2FE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		883CF86815EE76B2003A2FE1 /* BoardGames-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoardGames-Info.plist"; sourceTree = "<group>"; };
+		883CF86A15EE76B2003A2FE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		883CF86C15EE76B2003A2FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		883CF86E15EE76B2003A2FE1 /* BoardGames-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BoardGames-Prefix.pch"; sourceTree = "<group>"; };
+		883CF86F15EE76B2003A2FE1 /* SWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWAppDelegate.h; sourceTree = "<group>"; };
+		883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAppDelegate.m; sourceTree = "<group>"; };
+		883CF87315EE76B2003A2FE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		883CF87515EE76B2003A2FE1 /* SWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWMasterViewController.h; sourceTree = "<group>"; };
+		883CF87615EE76B2003A2FE1 /* SWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMasterViewController.m; sourceTree = "<group>"; };
+		883CF87815EE76B2003A2FE1 /* SWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWDetailViewController.h; sourceTree = "<group>"; };
+		883CF87915EE76B2003A2FE1 /* SWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		883CF85915EE76B2003A2FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883CF86115EE76B2003A2FE1 /* UIKit.framework in Frameworks */,
+				883CF86315EE76B2003A2FE1 /* Foundation.framework in Frameworks */,
+				883CF86515EE76B2003A2FE1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		883CF85115EE76B2003A2FE1 = {
+			isa = PBXGroup;
+			children = (
+				883CF86615EE76B2003A2FE1 /* BoardGames */,
+				883CF85F15EE76B2003A2FE1 /* Frameworks */,
+				883CF85D15EE76B2003A2FE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		883CF85D15EE76B2003A2FE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				883CF85C15EE76B2003A2FE1 /* BoardGames.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		883CF85F15EE76B2003A2FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				883CF86015EE76B2003A2FE1 /* UIKit.framework */,
+				883CF86215EE76B2003A2FE1 /* Foundation.framework */,
+				883CF86415EE76B2003A2FE1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		883CF86615EE76B2003A2FE1 /* BoardGames */ = {
+			isa = PBXGroup;
+			children = (
+				883CF86F15EE76B2003A2FE1 /* SWAppDelegate.h */,
+				883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */,
+				883CF87215EE76B2003A2FE1 /* MainStoryboard.storyboard */,
+				883CF87515EE76B2003A2FE1 /* SWMasterViewController.h */,
+				883CF87615EE76B2003A2FE1 /* SWMasterViewController.m */,
+				883CF87815EE76B2003A2FE1 /* SWDetailViewController.h */,
+				883CF87915EE76B2003A2FE1 /* SWDetailViewController.m */,
+				883CF86715EE76B2003A2FE1 /* Supporting Files */,
+			);
+			path = BoardGames;
+			sourceTree = "<group>";
+		};
+		883CF86715EE76B2003A2FE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				883CF86815EE76B2003A2FE1 /* BoardGames-Info.plist */,
+				883CF86915EE76B2003A2FE1 /* InfoPlist.strings */,
+				883CF86C15EE76B2003A2FE1 /* main.m */,
+				883CF86E15EE76B2003A2FE1 /* BoardGames-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		883CF85B15EE76B2003A2FE1 /* BoardGames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883CF87D15EE76B2003A2FE1 /* Build configuration list for PBXNativeTarget "BoardGames" */;
+			buildPhases = (
+				883CF85815EE76B2003A2FE1 /* Sources */,
+				883CF85915EE76B2003A2FE1 /* Frameworks */,
+				883CF85A15EE76B2003A2FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoardGames;
+			productName = BoardGames;
+			productReference = 883CF85C15EE76B2003A2FE1 /* BoardGames.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883CF85315EE76B2003A2FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SW;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Sam Warmuth";
+			};
+			buildConfigurationList = 883CF85615EE76B2003A2FE1 /* Build configuration list for PBXProject "BoardGames" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 883CF85115EE76B2003A2FE1;
+			productRefGroup = 883CF85D15EE76B2003A2FE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				883CF85B15EE76B2003A2FE1 /* BoardGames */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		883CF85A15EE76B2003A2FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883CF86B15EE76B2003A2FE1 /* InfoPlist.strings in Resources */,
+				883CF87415EE76B2003A2FE1 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883CF85815EE76B2003A2FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883CF86D15EE76B2003A2FE1 /* main.m in Sources */,
+				883CF87115EE76B2003A2FE1 /* SWAppDelegate.m in Sources */,
+				883CF87715EE76B2003A2FE1 /* SWMasterViewController.m in Sources */,
+				883CF87A15EE76B2003A2FE1 /* SWDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		883CF86915EE76B2003A2FE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883CF86A15EE76B2003A2FE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		883CF87215EE76B2003A2FE1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883CF87315EE76B2003A2FE1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		883CF87B15EE76B2003A2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		883CF87C15EE76B2003A2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		883CF87E15EE76B2003A2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BoardGames/BoardGames-Prefix.pch";
+				INFOPLIST_FILE = "BoardGames/BoardGames-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		883CF87F15EE76B2003A2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BoardGames/BoardGames-Prefix.pch";
+				INFOPLIST_FILE = "BoardGames/BoardGames-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883CF85615EE76B2003A2FE1 /* Build configuration list for PBXProject "BoardGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883CF87B15EE76B2003A2FE1 /* Debug */,
+				883CF87C15EE76B2003A2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883CF87D15EE76B2003A2FE1 /* Build configuration list for PBXNativeTarget "BoardGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883CF87E15EE76B2003A2FE1 /* Debug */,
+				883CF87F15EE76B2003A2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 883CF85315EE76B2003A2FE1 /* Project object */;
+}
