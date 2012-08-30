@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88106ECD15EFC3D3006BCE7C /* SWGameControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88106ECC15EFC3D3006BCE7C /* SWGameControlViewController.m */; };
+		88106ED815EFC7E0006BCE7C /* pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88106ED715EFC7E0006BCE7C /* pokemon.plist */; };
 		883CF86115EE76B2003A2FE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86015EE76B2003A2FE1 /* UIKit.framework */; };
 		883CF86315EE76B2003A2FE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86215EE76B2003A2FE1 /* Foundation.framework */; };
 		883CF86515EE76B2003A2FE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86415EE76B2003A2FE1 /* CoreGraphics.framework */; };
@@ -14,11 +16,20 @@
 		883CF86D15EE76B2003A2FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF86C15EE76B2003A2FE1 /* main.m */; };
 		883CF87115EE76B2003A2FE1 /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */; };
 		883CF87415EE76B2003A2FE1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883CF87215EE76B2003A2FE1 /* MainStoryboard.storyboard */; };
-		883CF87715EE76B2003A2FE1 /* SWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF87615EE76B2003A2FE1 /* SWMasterViewController.m */; };
-		883CF87A15EE76B2003A2FE1 /* SWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF87915EE76B2003A2FE1 /* SWDetailViewController.m */; };
+		883CF88615EE7767003A2FE1 /* SWTVBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF88515EE7767003A2FE1 /* SWTVBoardViewController.m */; };
+		883CF88915EE7921003A2FE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF88715EE791C003A2FE1 /* QuartzCore.framework */; };
+		883CF89415EE7D35003A2FE1 /* PokemonBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 883CF89315EE7D35003A2FE1 /* PokemonBoard.png */; };
+		883CF89815EE95EC003A2FE1 /* SWBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF89715EE95EC003A2FE1 /* SWBoard.m */; };
+		883CF89B15EE95F6003A2FE1 /* SWBoardSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CF89A15EE95F6003A2FE1 /* SWBoardSquare.m */; };
+		883CF89D15EE98D1003A2FE1 /* lewbowskiBoard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883CF89C15EE98D1003A2FE1 /* lewbowskiBoard.jpg */; };
+		88A3807115EEABBA003C3488 /* SWMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3807015EEABBA003C3488 /* SWMatch.m */; };
+		88A3807415EEACBD003C3488 /* SWPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3807315EEACBD003C3488 /* SWPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88106ECB15EFC3D3006BCE7C /* SWGameControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGameControlViewController.h; sourceTree = "<group>"; };
+		88106ECC15EFC3D3006BCE7C /* SWGameControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGameControlViewController.m; sourceTree = "<group>"; };
+		88106ED715EFC7E0006BCE7C /* pokemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokemon.plist; sourceTree = "<group>"; };
 		883CF85C15EE76B2003A2FE1 /* BoardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883CF86015EE76B2003A2FE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		883CF86215EE76B2003A2FE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -30,10 +41,19 @@
 		883CF86F15EE76B2003A2FE1 /* SWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWAppDelegate.h; sourceTree = "<group>"; };
 		883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAppDelegate.m; sourceTree = "<group>"; };
 		883CF87315EE76B2003A2FE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		883CF87515EE76B2003A2FE1 /* SWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWMasterViewController.h; sourceTree = "<group>"; };
-		883CF87615EE76B2003A2FE1 /* SWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMasterViewController.m; sourceTree = "<group>"; };
-		883CF87815EE76B2003A2FE1 /* SWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWDetailViewController.h; sourceTree = "<group>"; };
-		883CF87915EE76B2003A2FE1 /* SWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWDetailViewController.m; sourceTree = "<group>"; };
+		883CF88415EE7767003A2FE1 /* SWTVBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTVBoardViewController.h; sourceTree = "<group>"; };
+		883CF88515EE7767003A2FE1 /* SWTVBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTVBoardViewController.m; sourceTree = "<group>"; };
+		883CF88715EE791C003A2FE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		883CF89315EE7D35003A2FE1 /* PokemonBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PokemonBoard.png; sourceTree = "<group>"; };
+		883CF89615EE95EC003A2FE1 /* SWBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBoard.h; sourceTree = "<group>"; };
+		883CF89715EE95EC003A2FE1 /* SWBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBoard.m; sourceTree = "<group>"; };
+		883CF89915EE95F6003A2FE1 /* SWBoardSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBoardSquare.h; sourceTree = "<group>"; };
+		883CF89A15EE95F6003A2FE1 /* SWBoardSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBoardSquare.m; sourceTree = "<group>"; };
+		883CF89C15EE98D1003A2FE1 /* lewbowskiBoard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lewbowskiBoard.jpg; sourceTree = "<group>"; };
+		88A3806F15EEABBA003C3488 /* SWMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMatch.h; sourceTree = "<group>"; };
+		88A3807015EEABBA003C3488 /* SWMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMatch.m; sourceTree = "<group>"; };
+		88A3807215EEACBD003C3488 /* SWPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPlayer.h; sourceTree = "<group>"; };
+		88A3807315EEACBD003C3488 /* SWPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883CF88915EE7921003A2FE1 /* QuartzCore.framework in Frameworks */,
 				883CF86115EE76B2003A2FE1 /* UIKit.framework in Frameworks */,
 				883CF86315EE76B2003A2FE1 /* Foundation.framework in Frameworks */,
 				883CF86515EE76B2003A2FE1 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88106ED615EFC7CB006BCE7C /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				88106ED715EFC7E0006BCE7C /* pokemon.plist */,
+			);
+			name = Boards;
+			sourceTree = "<group>";
+		};
 		883CF85115EE76B2003A2FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +99,7 @@
 		883CF85F15EE76B2003A2FE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				883CF88715EE791C003A2FE1 /* QuartzCore.framework */,
 				883CF86015EE76B2003A2FE1 /* UIKit.framework */,
 				883CF86215EE76B2003A2FE1 /* Foundation.framework */,
 				883CF86415EE76B2003A2FE1 /* CoreGraphics.framework */,
@@ -83,10 +113,13 @@
 				883CF86F15EE76B2003A2FE1 /* SWAppDelegate.h */,
 				883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */,
 				883CF87215EE76B2003A2FE1 /* MainStoryboard.storyboard */,
-				883CF87515EE76B2003A2FE1 /* SWMasterViewController.h */,
-				883CF87615EE76B2003A2FE1 /* SWMasterViewController.m */,
-				883CF87815EE76B2003A2FE1 /* SWDetailViewController.h */,
-				883CF87915EE76B2003A2FE1 /* SWDetailViewController.m */,
+				88106ECB15EFC3D3006BCE7C /* SWGameControlViewController.h */,
+				88106ECC15EFC3D3006BCE7C /* SWGameControlViewController.m */,
+				883CF88415EE7767003A2FE1 /* SWTVBoardViewController.h */,
+				883CF88515EE7767003A2FE1 /* SWTVBoardViewController.m */,
+				88106ED615EFC7CB006BCE7C /* Boards */,
+				883CF89515EE95D8003A2FE1 /* Models */,
+				883CF89215EE7D2A003A2FE1 /* Images */,
 				883CF86715EE76B2003A2FE1 /* Supporting Files */,
 			);
 			path = BoardGames;
@@ -101,6 +134,30 @@
 				883CF86E15EE76B2003A2FE1 /* BoardGames-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		883CF89215EE7D2A003A2FE1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				883CF89315EE7D35003A2FE1 /* PokemonBoard.png */,
+				883CF89C15EE98D1003A2FE1 /* lewbowskiBoard.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		883CF89515EE95D8003A2FE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				883CF89615EE95EC003A2FE1 /* SWBoard.h */,
+				883CF89715EE95EC003A2FE1 /* SWBoard.m */,
+				883CF89915EE95F6003A2FE1 /* SWBoardSquare.h */,
+				883CF89A15EE95F6003A2FE1 /* SWBoardSquare.m */,
+				88A3806F15EEABBA003C3488 /* SWMatch.h */,
+				88A3807015EEABBA003C3488 /* SWMatch.m */,
+				88A3807215EEACBD003C3488 /* SWPlayer.h */,
+				88A3807315EEACBD003C3488 /* SWPlayer.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +214,9 @@
 			files = (
 				883CF86B15EE76B2003A2FE1 /* InfoPlist.strings in Resources */,
 				883CF87415EE76B2003A2FE1 /* MainStoryboard.storyboard in Resources */,
+				883CF89415EE7D35003A2FE1 /* PokemonBoard.png in Resources */,
+				883CF89D15EE98D1003A2FE1 /* lewbowskiBoard.jpg in Resources */,
+				88106ED815EFC7E0006BCE7C /* pokemon.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,8 +229,12 @@
 			files = (
 				883CF86D15EE76B2003A2FE1 /* main.m in Sources */,
 				883CF87115EE76B2003A2FE1 /* SWAppDelegate.m in Sources */,
-				883CF87715EE76B2003A2FE1 /* SWMasterViewController.m in Sources */,
-				883CF87A15EE76B2003A2FE1 /* SWDetailViewController.m in Sources */,
+				883CF88615EE7767003A2FE1 /* SWTVBoardViewController.m in Sources */,
+				883CF89815EE95EC003A2FE1 /* SWBoard.m in Sources */,
+				883CF89B15EE95F6003A2FE1 /* SWBoardSquare.m in Sources */,
+				88A3807115EEABBA003C3488 /* SWMatch.m in Sources */,
+				88A3807415EEACBD003C3488 /* SWPlayer.m in Sources */,
+				88106ECD15EFC3D3006BCE7C /* SWGameControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +350,7 @@
 				883CF87F15EE76B2003A2FE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

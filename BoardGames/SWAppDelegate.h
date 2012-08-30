@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SWTVBoardViewController.h"
 @interface SWAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) NSMutableArray *windows;
 @property (strong, nonatomic) UIWindow *window;
+
+- (UIWindow *)createWindowForScreen:(UIScreen *)screen;
+- (void)addViewController:(UIViewController *)controller toWindow:(UIWindow *)window;
+- (void)screenDidConnect:(NSNotification *) notification;
+- (void)screenDidDisconnect:(NSNotification *) notification;
 
 @end

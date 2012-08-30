@@ -7,40 +7,117 @@
 //
 
 #import "SWAppDelegate.h"
+#import "SWTVBoardViewController.h"
 
 @implementation SWAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UIWindow    *newWindow    = nil;
+    NSArray     *_screens   = nil;
+    
+    self.windows = [[NSMutableArray alloc] init];
+    
+    _screens = [UIScreen screens];
+    for (UIScreen *screen in _screens){
+        if (screen == [UIScreen mainScreen]){
+            [newWindow makeKeyAndVisible];
+            continue;
+        }
+
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+        SWTVBoardViewController *boardViewController = [storyboard instantiateViewControllerWithIdentifier:@"SWTVBoardViewController"];
+        NSLog(@"aaa%@", NSStringFromCGRect([screen bounds]));
+        boardViewController.view.frame = [screen bounds];
+        newWindow = [self createWindowForScreen:screen];
+        [self addViewController:boardViewController toWindow:newWindow];
+        
+        // If you don't do this here, you will get the "Applications are expected to have a root view controller" message.
+
+        
+    }
+    
+    // Register for notification
+    [[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(screenDidConnect:)
+												 name:UIScreenDidConnectNotification
+											   object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(screenDidDisconnect:)
+												 name:UIScreenDidDisconnectNotification
+											   object:nil];
     return YES;
 }
-							
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // Unregister for notifications
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIScreenDidConnectNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIScreenDidDisconnectNotification object:nil];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
+#pragma mark -
+#pragma mark Private methods
+
+- (UIWindow *) createWindowForScreen:(UIScreen *)screen {
+    UIWindow    *newWindow    = nil;
+    
+    // Do we already have a window for this screen?
+    for (UIWindow *window in self.windows){
+        if (window.screen == screen){
+            newWindow = window;
+        }
+    }
+    // Still nil? Create a new one.
+    if (newWindow == nil){
+        newWindow = [[UIWindow alloc] initWithFrame:[screen bounds]];
+        [newWindow setScreen:screen];
+        [self.windows addObject:newWindow];
+    }
+    
+    return newWindow;
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+- (void) addViewController:(UIViewController *)controller toWindow:(UIWindow *)window {
+    [window setRootViewController:controller];
+    [window setHidden:NO];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void) screenDidConnect:(NSNotification *) notification {
+    UIWindow                    *newWindow            = nil;
+    
+    
+    NSLog(@"Screen connected");
+    UIScreen *screen = [notification object];
+    
+    if (screen == [UIScreen mainScreen]){
+        [newWindow makeKeyAndVisible];
+        return;
+    }
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    SWTVBoardViewController *boardViewController = [storyboard instantiateViewControllerWithIdentifier:@"SWTVBoardViewController"];
+    NSLog(@"aaa%@", NSStringFromCGRect([screen bounds]));
+    boardViewController.view.frame = [screen bounds];
+    newWindow = [self createWindowForScreen:screen];
+    [self addViewController:boardViewController toWindow:newWindow];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void) screenDidDisconnect:(NSNotification *) notification {
+    UIScreen    *_screen    = nil;
+    
+    NSLog(@"Screen disconnected");
+    _screen = [notification object];
+    
+    // Find any window attached to this screen, remove it from our window list, and release it.
+    for (UIWindow *newWindow in self.windows){
+        if (newWindow.screen == _screen){
+            NSUInteger windowIndex = [self.windows indexOfObject:newWindow];
+            [self.windows removeObjectAtIndex:windowIndex];
+        }
+    }
+    return;
 }
 
 @end
