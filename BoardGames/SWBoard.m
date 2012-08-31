@@ -23,16 +23,27 @@
 
 	NSString *plistPath = [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
     NSDictionary *boardInfo = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    NSLog(@"board: %@", boardInfo);
+    //NSLog(@"board: %@", boardInfo);
     
     SWBoard *board = [SWBoard new];
     board.boardImage = [UIImage imageNamed:[boardInfo objectForKey:@"imagePath"]];
     board.squares = [NSMutableArray new];
     
     NSInteger squareDiameter = [[boardInfo objectForKey:@"squareDiameter"] integerValue];
-    for (NSString *boardCenterString in (NSArray *)[boardInfo objectForKey:@"squareCenters"]){
-        CGPoint boardCenter = CGPointFromString(boardCenterString);
-        [board.squares addObject:[SWBoardSquare squareWithCenterPoint:boardCenter andDiameter:(float)squareDiameter]];
+    for (NSDictionary *squareDict in (NSArray *)[boardInfo objectForKey:@"squares"]){
+        CGPoint squareCenter = CGPointFromString([squareDict objectForKey:@"center"]);
+        SWBoardSquare *square = [SWBoardSquare squareWithCenterPoint:squareCenter andDiameter:(float)squareDiameter];
+        square.playerMustStopHere = [[squareDict objectForKey:@"playerMustStop"] boolValue];
+        
+        if ([squareDict objectForKey:@"teleportToIndex"]) square.teleportToSquareIndex = [[squareDict objectForKey:@"teleportToIndex"] intValue];
+        else square.teleportToSquareIndex = -1;
+        
+        if ([squareDict objectForKey:@"switchToPikachu"]) square.switchToPikachu = [[squareDict objectForKey:@"switchToPikachu"] boolValue];
+        else square.switchToPikachu = FALSE;
+        
+        
+        
+        [board.squares addObject:square];
     }
     
     return board;

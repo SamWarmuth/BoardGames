@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UIImage *boardImage;
 @property (nonatomic, strong) NSMutableArray *squares;
+@property (nonatomic, strong) SWBoardSquare *rulesSquare;
 
 + (SWBoard *)boardWithImage:(UIImage *)image;
 + (SWBoard *)boardWithPlistNamed:(NSString *)name;

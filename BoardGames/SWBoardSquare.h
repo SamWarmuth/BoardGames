@@ -12,6 +12,9 @@
 
 @property (nonatomic, strong) NSString *message;
 @property CGRect bounds;
+@property BOOL playerMustStopHere, switchToPikachu;
+@property NSInteger teleportToSquareIndex;
+
 
 + (SWBoardSquare *)squareWithCenterPoint:(CGPoint)center andDiameter:(CGFloat)diameter;
 + (SWBoardSquare *)squareWithBounds:(CGRect)bounds;

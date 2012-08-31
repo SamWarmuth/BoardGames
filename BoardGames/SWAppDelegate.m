@@ -26,13 +26,12 @@
 
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         SWTVBoardViewController *boardViewController = [storyboard instantiateViewControllerWithIdentifier:@"SWTVBoardViewController"];
-        NSLog(@"aaa%@", NSStringFromCGRect([screen bounds]));
+        ///NSLog(@"aaa%@", NSStringFromCGRect([screen bounds]));
         boardViewController.view.frame = [screen bounds];
         newWindow = [self createWindowForScreen:screen];
         [self addViewController:boardViewController toWindow:newWindow];
         
-        // If you don't do this here, you will get the "Applications are expected to have a root view controller" message.
-
+    
         
     }
     
@@ -98,10 +97,13 @@
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     SWTVBoardViewController *boardViewController = [storyboard instantiateViewControllerWithIdentifier:@"SWTVBoardViewController"];
-    NSLog(@"aaa%@", NSStringFromCGRect([screen bounds]));
+    ///NSLog(@"aaa%@", NSStringFromCGRect([screen bounds]));
     boardViewController.view.frame = [screen bounds];
     newWindow = [self createWindowForScreen:screen];
     [self addViewController:boardViewController toWindow:newWindow];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"SWDisplayConnected" object:nil];
+
 }
 
 - (void) screenDidDisconnect:(NSNotification *) notification {
@@ -118,6 +120,11 @@
         }
     }
     return;
+}
+
+- (BOOL)externalDisplayConnected
+{
+    return [UIScreen screens].count > 1;
 }
 
 @end

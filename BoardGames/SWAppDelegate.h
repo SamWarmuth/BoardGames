@@ -18,4 +18,5 @@
 - (void)screenDidConnect:(NSNotification *) notification;
 - (void)screenDidDisconnect:(NSNotification *) notification;
 
+- (BOOL)externalDisplayConnected;
 @end

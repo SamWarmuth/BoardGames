@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88037F9415EFD6DB00BC0EDD /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88037F9115EFD6DB00BC0EDD /* SVProgressHUD.bundle */; };
+		88037F9515EFD6DB00BC0EDD /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 88037F9315EFD6DB00BC0EDD /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		88037F9B15EFDBE600BC0EDD /* squirtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037F9715EFDBE600BC0EDD /* squirtle.png */; };
+		88037F9C15EFDBE600BC0EDD /* pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037F9815EFDBE600BC0EDD /* pikachu.png */; };
+		88037F9D15EFDBE600BC0EDD /* bulbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037F9915EFDBE600BC0EDD /* bulbasaur.png */; };
+		88037F9E15EFDBE600BC0EDD /* charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037F9A15EFDBE600BC0EDD /* charmander.png */; };
+		88037FA115EFECF700BC0EDD /* SWGameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88037FA015EFECF700BC0EDD /* SWGameSetupViewController.m */; };
+		88037FAE15EFF5A000BC0EDD /* 6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA215EFF5A000BC0EDD /* 6@2x.png */; };
+		88037FAF15EFF5A000BC0EDD /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA315EFF5A000BC0EDD /* 5@2x.png */; };
+		88037FB015EFF5A000BC0EDD /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA415EFF5A000BC0EDD /* 4@2x.png */; };
+		88037FB115EFF5A000BC0EDD /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA515EFF5A000BC0EDD /* 3@2x.png */; };
+		88037FB215EFF5A000BC0EDD /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA615EFF5A000BC0EDD /* 2@2x.png */; };
+		88037FB315EFF5A000BC0EDD /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA715EFF5A000BC0EDD /* 1@2x.png */; };
+		88037FB415EFF5A000BC0EDD /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA815EFF5A000BC0EDD /* 6.png */; };
+		88037FB515EFF5A000BC0EDD /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FA915EFF5A000BC0EDD /* 5.png */; };
+		88037FB615EFF5A000BC0EDD /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FAA15EFF5A000BC0EDD /* 4.png */; };
+		88037FB715EFF5A000BC0EDD /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FAB15EFF5A000BC0EDD /* 3.png */; };
+		88037FB815EFF5A000BC0EDD /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FAC15EFF5A000BC0EDD /* 2.png */; };
+		88037FB915EFF5A000BC0EDD /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 88037FAD15EFF5A000BC0EDD /* 1.png */; };
+		88037FC015F0090900BC0EDD /* SWCreatePlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88037FBF15F0090900BC0EDD /* SWCreatePlayerCell.m */; };
+		88037FC715F01B2100BC0EDD /* SWConnectDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88037FC615F01B2000BC0EDD /* SWConnectDisplayViewController.m */; };
+		88037FD015F0FD7200BC0EDD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88037FCF15F0FD7100BC0EDD /* iPadStoryboard.storyboard */; };
 		88106ECD15EFC3D3006BCE7C /* SWGameControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88106ECC15EFC3D3006BCE7C /* SWGameControlViewController.m */; };
 		88106ED815EFC7E0006BCE7C /* pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88106ED715EFC7E0006BCE7C /* pokemon.plist */; };
 		883CF86115EE76B2003A2FE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CF86015EE76B2003A2FE1 /* UIKit.framework */; };
@@ -24,9 +46,40 @@
 		883CF89D15EE98D1003A2FE1 /* lewbowskiBoard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 883CF89C15EE98D1003A2FE1 /* lewbowskiBoard.jpg */; };
 		88A3807115EEABBA003C3488 /* SWMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3807015EEABBA003C3488 /* SWMatch.m */; };
 		88A3807415EEACBD003C3488 /* SWPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3807315EEACBD003C3488 /* SWPlayer.m */; };
+		88C89BE515F11CBB00E8E22C /* pokeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C89BE415F11CBB00E8E22C /* pokeIcon@2x.png */; };
+		88C89BE815F11CBD00E8E22C /* pokeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C89BE715F11CBD00E8E22C /* pokeIcon.png */; };
+		88C89BEA15F11D4A00E8E22C /* pokeIconiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C89BE915F11D4A00E8E22C /* pokeIconiPad.png */; };
+		88C89BEC15F11D5100E8E22C /* pokeIconiPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C89BEB15F11D5100E8E22C /* pokeIconiPad@2x.png */; };
+		88D486E115F1163B00080073 /* pokeRules.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D486DF15F1163B00080073 /* pokeRules.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88037F9115EFD6DB00BC0EDD /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		88037F9215EFD6DB00BC0EDD /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		88037F9315EFD6DB00BC0EDD /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		88037F9715EFDBE600BC0EDD /* squirtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squirtle.png; sourceTree = "<group>"; };
+		88037F9815EFDBE600BC0EDD /* pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikachu.png; sourceTree = "<group>"; };
+		88037F9915EFDBE600BC0EDD /* bulbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulbasaur.png; sourceTree = "<group>"; };
+		88037F9A15EFDBE600BC0EDD /* charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charmander.png; sourceTree = "<group>"; };
+		88037F9F15EFECF700BC0EDD /* SWGameSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGameSetupViewController.h; sourceTree = "<group>"; };
+		88037FA015EFECF700BC0EDD /* SWGameSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGameSetupViewController.m; sourceTree = "<group>"; };
+		88037FA215EFF5A000BC0EDD /* 6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6@2x.png"; sourceTree = "<group>"; };
+		88037FA315EFF5A000BC0EDD /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
+		88037FA415EFF5A000BC0EDD /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@2x.png"; sourceTree = "<group>"; };
+		88037FA515EFF5A000BC0EDD /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		88037FA615EFF5A000BC0EDD /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		88037FA715EFF5A000BC0EDD /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		88037FA815EFF5A000BC0EDD /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		88037FA915EFF5A000BC0EDD /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		88037FAA15EFF5A000BC0EDD /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		88037FAB15EFF5A000BC0EDD /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		88037FAC15EFF5A000BC0EDD /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		88037FAD15EFF5A000BC0EDD /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		88037FBE15F0090900BC0EDD /* SWCreatePlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCreatePlayerCell.h; sourceTree = "<group>"; };
+		88037FBF15F0090900BC0EDD /* SWCreatePlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCreatePlayerCell.m; sourceTree = "<group>"; };
+		88037FC515F01B2000BC0EDD /* SWConnectDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWConnectDisplayViewController.h; sourceTree = "<group>"; };
+		88037FC615F01B2000BC0EDD /* SWConnectDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWConnectDisplayViewController.m; sourceTree = "<group>"; };
+		88037FCF15F0FD7100BC0EDD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		88106ECB15EFC3D3006BCE7C /* SWGameControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGameControlViewController.h; sourceTree = "<group>"; };
 		88106ECC15EFC3D3006BCE7C /* SWGameControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGameControlViewController.m; sourceTree = "<group>"; };
 		88106ED715EFC7E0006BCE7C /* pokemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokemon.plist; sourceTree = "<group>"; };
@@ -54,6 +107,11 @@
 		88A3807015EEABBA003C3488 /* SWMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMatch.m; sourceTree = "<group>"; };
 		88A3807215EEACBD003C3488 /* SWPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPlayer.h; sourceTree = "<group>"; };
 		88A3807315EEACBD003C3488 /* SWPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPlayer.m; sourceTree = "<group>"; };
+		88C89BE415F11CBB00E8E22C /* pokeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokeIcon@2x.png"; sourceTree = "<group>"; };
+		88C89BE715F11CBD00E8E22C /* pokeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeIcon.png; sourceTree = "<group>"; };
+		88C89BE915F11D4A00E8E22C /* pokeIconiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeIconiPad.png; sourceTree = "<group>"; };
+		88C89BEB15F11D5100E8E22C /* pokeIconiPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokeIconiPad@2x.png"; sourceTree = "<group>"; };
+		88D486DF15F1163B00080073 /* pokeRules.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeRules.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +129,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88037F8F15EFD6D200BC0EDD /* External */ = {
+			isa = PBXGroup;
+			children = (
+				88037F9015EFD6DB00BC0EDD /* SVProgressHUD */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		88037F9015EFD6DB00BC0EDD /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				88037F9115EFD6DB00BC0EDD /* SVProgressHUD.bundle */,
+				88037F9215EFD6DB00BC0EDD /* SVProgressHUD.h */,
+				88037F9315EFD6DB00BC0EDD /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		88106ED615EFC7CB006BCE7C /* Boards */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +158,10 @@
 		883CF85115EE76B2003A2FE1 = {
 			isa = PBXGroup;
 			children = (
+				88C89BEB15F11D5100E8E22C /* pokeIconiPad@2x.png */,
+				88C89BE915F11D4A00E8E22C /* pokeIconiPad.png */,
+				88C89BE715F11CBD00E8E22C /* pokeIcon.png */,
+				88C89BE415F11CBB00E8E22C /* pokeIcon@2x.png */,
 				883CF86615EE76B2003A2FE1 /* BoardGames */,
 				883CF85F15EE76B2003A2FE1 /* Frameworks */,
 				883CF85D15EE76B2003A2FE1 /* Products */,
@@ -113,10 +193,18 @@
 				883CF86F15EE76B2003A2FE1 /* SWAppDelegate.h */,
 				883CF87015EE76B2003A2FE1 /* SWAppDelegate.m */,
 				883CF87215EE76B2003A2FE1 /* MainStoryboard.storyboard */,
+				88037FCF15F0FD7100BC0EDD /* iPadStoryboard.storyboard */,
+				88037FC515F01B2000BC0EDD /* SWConnectDisplayViewController.h */,
+				88037FC615F01B2000BC0EDD /* SWConnectDisplayViewController.m */,
+				88037F9F15EFECF700BC0EDD /* SWGameSetupViewController.h */,
+				88037FA015EFECF700BC0EDD /* SWGameSetupViewController.m */,
 				88106ECB15EFC3D3006BCE7C /* SWGameControlViewController.h */,
 				88106ECC15EFC3D3006BCE7C /* SWGameControlViewController.m */,
 				883CF88415EE7767003A2FE1 /* SWTVBoardViewController.h */,
 				883CF88515EE7767003A2FE1 /* SWTVBoardViewController.m */,
+				88037FBE15F0090900BC0EDD /* SWCreatePlayerCell.h */,
+				88037FBF15F0090900BC0EDD /* SWCreatePlayerCell.m */,
+				88037F8F15EFD6D200BC0EDD /* External */,
 				88106ED615EFC7CB006BCE7C /* Boards */,
 				883CF89515EE95D8003A2FE1 /* Models */,
 				883CF89215EE7D2A003A2FE1 /* Images */,
@@ -139,8 +227,25 @@
 		883CF89215EE7D2A003A2FE1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				88D486DF15F1163B00080073 /* pokeRules.png */,
 				883CF89315EE7D35003A2FE1 /* PokemonBoard.png */,
 				883CF89C15EE98D1003A2FE1 /* lewbowskiBoard.jpg */,
+				88037F9715EFDBE600BC0EDD /* squirtle.png */,
+				88037F9815EFDBE600BC0EDD /* pikachu.png */,
+				88037F9915EFDBE600BC0EDD /* bulbasaur.png */,
+				88037F9A15EFDBE600BC0EDD /* charmander.png */,
+				88037FA215EFF5A000BC0EDD /* 6@2x.png */,
+				88037FA315EFF5A000BC0EDD /* 5@2x.png */,
+				88037FA415EFF5A000BC0EDD /* 4@2x.png */,
+				88037FA515EFF5A000BC0EDD /* 3@2x.png */,
+				88037FA615EFF5A000BC0EDD /* 2@2x.png */,
+				88037FA715EFF5A000BC0EDD /* 1@2x.png */,
+				88037FA815EFF5A000BC0EDD /* 6.png */,
+				88037FA915EFF5A000BC0EDD /* 5.png */,
+				88037FAA15EFF5A000BC0EDD /* 4.png */,
+				88037FAB15EFF5A000BC0EDD /* 3.png */,
+				88037FAC15EFF5A000BC0EDD /* 2.png */,
+				88037FAD15EFF5A000BC0EDD /* 1.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -217,6 +322,29 @@
 				883CF89415EE7D35003A2FE1 /* PokemonBoard.png in Resources */,
 				883CF89D15EE98D1003A2FE1 /* lewbowskiBoard.jpg in Resources */,
 				88106ED815EFC7E0006BCE7C /* pokemon.plist in Resources */,
+				88037F9415EFD6DB00BC0EDD /* SVProgressHUD.bundle in Resources */,
+				88037F9B15EFDBE600BC0EDD /* squirtle.png in Resources */,
+				88037F9C15EFDBE600BC0EDD /* pikachu.png in Resources */,
+				88037F9D15EFDBE600BC0EDD /* bulbasaur.png in Resources */,
+				88037F9E15EFDBE600BC0EDD /* charmander.png in Resources */,
+				88037FAE15EFF5A000BC0EDD /* 6@2x.png in Resources */,
+				88037FAF15EFF5A000BC0EDD /* 5@2x.png in Resources */,
+				88037FB015EFF5A000BC0EDD /* 4@2x.png in Resources */,
+				88037FB115EFF5A000BC0EDD /* 3@2x.png in Resources */,
+				88037FB215EFF5A000BC0EDD /* 2@2x.png in Resources */,
+				88037FB315EFF5A000BC0EDD /* 1@2x.png in Resources */,
+				88037FB415EFF5A000BC0EDD /* 6.png in Resources */,
+				88037FB515EFF5A000BC0EDD /* 5.png in Resources */,
+				88037FB615EFF5A000BC0EDD /* 4.png in Resources */,
+				88037FB715EFF5A000BC0EDD /* 3.png in Resources */,
+				88037FB815EFF5A000BC0EDD /* 2.png in Resources */,
+				88037FB915EFF5A000BC0EDD /* 1.png in Resources */,
+				88037FD015F0FD7200BC0EDD /* iPadStoryboard.storyboard in Resources */,
+				88D486E115F1163B00080073 /* pokeRules.png in Resources */,
+				88C89BE515F11CBB00E8E22C /* pokeIcon@2x.png in Resources */,
+				88C89BE815F11CBD00E8E22C /* pokeIcon.png in Resources */,
+				88C89BEA15F11D4A00E8E22C /* pokeIconiPad.png in Resources */,
+				88C89BEC15F11D5100E8E22C /* pokeIconiPad@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +363,10 @@
 				88A3807115EEABBA003C3488 /* SWMatch.m in Sources */,
 				88A3807415EEACBD003C3488 /* SWPlayer.m in Sources */,
 				88106ECD15EFC3D3006BCE7C /* SWGameControlViewController.m in Sources */,
+				88037F9515EFD6DB00BC0EDD /* SVProgressHUD.m in Sources */,
+				88037FA115EFECF700BC0EDD /* SWGameSetupViewController.m in Sources */,
+				88037FC015F0090900BC0EDD /* SWCreatePlayerCell.m in Sources */,
+				88037FC715F01B2100BC0EDD /* SWConnectDisplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +447,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoardGames/BoardGames-Prefix.pch";
 				INFOPLIST_FILE = "BoardGames/BoardGames-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -326,7 +460,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoardGames/BoardGames-Prefix.pch";
 				INFOPLIST_FILE = "BoardGames/BoardGames-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
