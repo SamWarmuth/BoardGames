@@ -34,6 +34,8 @@
         CGPoint squareCenter = CGPointFromString([squareDict objectForKey:@"center"]);
         SWBoardSquare *square = [SWBoardSquare squareWithCenterPoint:squareCenter andDiameter:(float)squareDiameter];
         square.playerMustStopHere = [[squareDict objectForKey:@"playerMustStop"] boolValue];
+        square.extraTurn = [[squareDict objectForKey:@"extraTurn"] boolValue];
+
         
         if ([squareDict objectForKey:@"teleportToIndex"]) square.teleportToSquareIndex = [[squareDict objectForKey:@"teleportToIndex"] intValue];
         else square.teleportToSquareIndex = -1;

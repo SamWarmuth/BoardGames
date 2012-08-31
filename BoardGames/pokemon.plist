@@ -21,6 +21,8 @@
 			<false/>
 		</dict>
 		<dict>
+			<key>extraTurn</key>
+			<true/>
 			<key>center</key>
 			<string>{296.0,670.0}</string>
 			<key>playerMustStop</key>
@@ -73,6 +75,8 @@
 		<dict>
 			<key>center</key>
 			<string>{670.0,1798.0}</string>
+			<key>extraTurn</key>
+			<true/>
 			<key>playerMustStop</key>
 			<false/>
 		</dict>
@@ -163,6 +167,8 @@
 			<false/>
 		</dict>
 		<dict>
+			<key>teleportToIndex</key>
+			<integer>15</integer>
 			<key>center</key>
 			<string>{1610.0,294.0}</string>
 			<key>playerMustStop</key>
@@ -263,6 +269,8 @@
 		<dict>
 			<key>center</key>
 			<string>{1046.0,1610.0}</string>
+			<key>extraTurn</key>
+			<true/>
 			<key>playerMustStop</key>
 			<false/>
 		</dict>

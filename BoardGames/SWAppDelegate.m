@@ -15,6 +15,8 @@
     UIWindow    *newWindow    = nil;
     NSArray     *_screens   = nil;
     
+    if ([self isiPad]) return YES;
+    
     self.windows = [[NSMutableArray alloc] init];
     
     _screens = [UIScreen screens];
@@ -120,6 +122,10 @@
         }
     }
     return;
+}
+
+- (BOOL)isiPad {
+    return (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad);
 }
 
 - (BOOL)externalDisplayConnected

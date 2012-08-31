@@ -25,7 +25,6 @@ typedef void (^SWActionCallbackBlock)(void);
 @property NSInteger currentSquareIndex, currentDieValue;
 @property (nonatomic, strong) UIView *messageOverlay;
 
-
 @property (nonatomic, strong) SWActionCallbackBlock continueAction, rollAction, rollAnimationCompleteAction;
 
 @property (nonatomic, strong) IBOutlet UIButton *continueButton;

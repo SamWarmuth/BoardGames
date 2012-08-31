@@ -47,7 +47,7 @@
     if ([self isiPad]){
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(waitingForContinue) name:@"SWWaitingForContinue" object:nil];
         UISwipeGestureRecognizer *swipeDieLR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rollDice)];
-        [swipeDieLR setDirection:UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionUp];
+        [swipeDieLR setDirection:UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionLeft];
         [self.dieImageView addGestureRecognizer:swipeDieLR];
         UISwipeGestureRecognizer *swipeDieUD = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rollDice)];
         [swipeDieUD setDirection:UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown];
@@ -207,6 +207,9 @@
                 if (endSquare.switchToPikachu){
                     [player setTokenPokemon:SWPokemonPikachu];
                 }
+                if (endSquare.extraTurn){
+                    self.match.turnNumber--;
+                }
                 
                 //This sucks. Basically, they're duplicated.
                 if (endSquare.teleportToSquareIndex != -1){
@@ -231,7 +234,7 @@
     }
 }
 
-- (void)separateOverlappingPlayers
+- (void)findOverlappingPlayers
 {
     NSMutableDictionary *matches = [NSMutableDictionary new];
     for (SWPlayer *player in self.match.players) {
@@ -247,12 +250,34 @@
         if (players.count == 1) {
             NSLog(@"No Match.");
         } else {
-            for (int i = 0; i < players.count; i++){
-                SWPlayer *player = [players objectAtIndex:i];
-                CGRect oldFrame = player.token.frame;
-                player.token.frame = CGRectMake(oldFrame.origin.x - 20 + 20*i, oldFrame.origin.y, oldFrame.size.width, oldFrame.size.height);
-            }            
-            NSLog(@"Match!");
+            if ([key intValue] != 0) {
+                for (int i = 0; i < players.count; i++){
+                    SWPlayer *player = [players objectAtIndex:i];
+                    CGRect oldFrame = player.token.frame;
+                    player.token.frame = CGRectMake(oldFrame.origin.x - 20 + 20*i, oldFrame.origin.y, oldFrame.size.width, oldFrame.size.height);
+                }
+                NSLog(@"Match!");
+                CGSize viewSize = self.view.frame.size;
+                UILabel *message = [[UILabel alloc] initWithFrame:CGRectMake(260.0, 80.0, viewSize.width, viewSize.height-400.0)];
+                message.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+                message.textColor = [UIColor whiteColor];
+                message.textAlignment = UITextAlignmentCenter;
+                message.numberOfLines = 0;
+                message.text = [NSString stringWithFormat:@"BATTLE!\n%@ vs %@", [(SWPlayer *)[players objectAtIndex:players.count - 2] name], [(SWPlayer *)players.lastObject name]];
+                message.font = [UIFont boldSystemFontOfSize:60.0];
+                message.layer.cornerRadius = 40.0;
+                [self.view addSubview:message];
+                
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+                    [UIView animateWithDuration:1.0f
+                                     animations:^{
+                                         message.alpha = 0.0;
+                                     }
+                                     completion:^(BOOL finished){
+                                         [message removeFromSuperview];
+                                     }];
+                });
+            }
         }        
     }];
 }
@@ -367,23 +392,17 @@
         label.text = player.name;
         label.textAlignment = UITextAlignmentCenter;
         label.font = [UIFont boldSystemFontOfSize:40.0];
-        
+        label.backgroundColor = [player.tokenColor colorWithAlphaComponent:0.2];
+
         if (i == playerTurn){
             label.layer.borderWidth = 2.0;
             label.layer.borderColor = [UIColor whiteColor].CGColor;
-            if (TRUE || [player.tokenColor isEqual:[UIColor blackColor]]){
-                label.textColor = [UIColor whiteColor];
-                label.shadowColor = [UIColor darkGrayColor];
-                label.shadowOffset = CGSizeMake(0.0, 2.0);
-            } else {
-                label.textColor = [UIColor blackColor];
-                label.shadowColor = [UIColor whiteColor];
-                label.shadowOffset = CGSizeMake(0.0, 2.0);
-            }
+            label.textColor = [UIColor whiteColor];
+            label.shadowColor = [UIColor darkGrayColor];
+            label.shadowOffset = CGSizeMake(0.0, 2.0);
             label.backgroundColor = [player.tokenColor colorWithAlphaComponent:1.0];
-        } else {
-            label.backgroundColor = [player.tokenColor colorWithAlphaComponent:0.2];
         }
+        
         [self.playerLabels addObject:label];
         [self.sideboard addSubview:label];
     }
@@ -435,6 +454,8 @@
     [self.containerView bringSubviewToFront:player.token];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SWWaitingForRoll" object:player userInfo:nil];
+    [self findOverlappingPlayers];
+
 }
 
 - (IBAction)rollButtonPressed:(id)sender

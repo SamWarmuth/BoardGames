@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSString *message;
 @property CGRect bounds;
-@property BOOL playerMustStopHere, switchToPikachu;
+@property BOOL playerMustStopHere, switchToPikachu, extraTurn;
 @property NSInteger teleportToSquareIndex;
 
 
